@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-var gifbuttons = ["Steph Curry" , "Kevin Durrant", "Lebron James", "James Harden", "Kyrie Irving",]
+var gifbuttons = ["Steph Curry" , "Kevin Durrant", "Lebron James", "James Harden", "Kyrie Irving", "Kemba Walker",]
 
 
 console.log (gifbuttons)
