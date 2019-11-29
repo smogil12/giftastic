@@ -1,0 +1,14 @@
+.my-col {
+
+    text-align: center;
+    background-color: lightgray;
+    height: 40px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+button {
+
+    
+}
