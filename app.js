@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-var gifbuttons = ["Steph Curry" , "Kevin Durrant", "Lebron James", "James Harden", "Kyrie Irving", "Kemba Walker",]
+var gifbuttons = ["Steph Curry" , "Kevin Durrant", "Lebron James", "James Harden", "Kyrie Irving", "Kemba Walker", "Lou Will", "Ben Simmons", "Zion Williamson", "Russel Westbrook", "Anthony Davis", "Kawhi Leonard", "Paul George", "Joel Embiid", "Giannis Antetokounmpo"]
 
 
 console.log (gifbuttons)
@@ -23,7 +23,7 @@ $("button").on("click", function() {
     })
       .then(function(response) {
         var results = response.data;
-
+        
         for (var i = 0; i < results.length; i++) {
           var gifDiv = $("<div>");
 
