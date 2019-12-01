@@ -24,3 +24,8 @@ button {
     
     background-position: center top;
 }
+
+#player-selector {
+    margin-top: 10px;
+    text-align: center;
+}

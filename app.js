@@ -32,17 +32,45 @@ $("button").on("click", function() {
           var p = $("<p>").text("Rating: " + rating);
 
           var personImage = $("<img>");
-          personImage.attr("src", results[i].images.fixed_height.url);
+          personImage.attr("src", results[i].images.fixed_height_still.url);
+          personImage.attr("data-state", "still");
+          personImage.attr("data-still", results[i].images.fixed_height_still.url);
+          personImage.attr("data-animate", results[i].images.fixed_height.url);
+          personImage.addClass("showImage");
+          
 
           gifDiv.prepend(p);
           gifDiv.prepend(personImage);
 
           $("#gifs").prepend(gifDiv);
+          console.log(response.data);
+
+          
+            
+
         }
+
+        
+
       });
+      
   });
 
+  
+  $(document).on('click', '.showImage',  function() {
 
+    var state = $(this).data('state');
+    if (state == "still") {
+        console.log("still image works");
+        $(this).attr('src', $(this).data('animate'))
+               .data('state', 'animate');
+    } else {
+        console.log("animated image works");
+        $(this).attr('src', $(this).data('still'))
+               .data('state', 'still');               
+    }
+
+});
 
 
 
