@@ -18,6 +18,7 @@ button {
     margin-top: 10px;
     background-color: rgb(197, 109, 109);
     margin-left: 15px;
+    border-radius: 12px;
 }
 
 #gifs {
@@ -30,6 +31,7 @@ button {
 #player-selector {
     margin-top: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 img {
