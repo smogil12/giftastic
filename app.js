@@ -10,7 +10,19 @@ for (var i = 0; i < gifbuttons.length; i++) {
     var buttons = $('<button>'+ gifbuttons[i] + '</button>') 
     $('#gifbutton').append(buttons);
     buttons.attr("data-buttonvalue", gifbuttons[i]);
+    
 }
+
+$("#addPlayer").on("click", function(event) {
+
+    event.preventDefault();
+    var searchInput = $("#player-input").val();
+    $('#gifbutton').append('<button>'+ searchInput + '</button>');
+    searchInput.attr("data-buttonvalue", searchInput);
+    console.log (searchInput);
+
+
+    });
 
 $("button").on("click", function() {
     var person = $(this).attr("data-buttonvalue");
